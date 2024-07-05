@@ -1,17 +1,5 @@
-# Welcome to MkDocs
+# 한국 연합우주 개발자 모임 문서 저장소에 오신 것을 환영합니다!
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+이 저장소는 Material for Mkdocs 를 이용하여 제작되었습니다.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+현재 레포지토리 구성 중입니다.
