@@ -1,4 +1,4 @@
 site_name: 한국 연합우주 개발자 모임 문서 저장소
-#site_url: https://mydomain.org/mysite
+site_url: https://docs.fedidev.kr/
 theme:
   name: material
