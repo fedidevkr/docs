@@ -1,0 +1,23 @@
+name: main
+on: [push]
+
+jobs:
+  mkdocs:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      pages: write
+      deployments: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+    - uses: actions/checkout@v4
+    - run: pip install --user -r requirements.txt
+    - run: mkdocs build
+    - run: echo docs.fedidev.kr > site/CNAME
+    - uses: actions/upload-pages-artifact@v3
+      with:
+        path: site
+    - id: deployment
+      uses: actions/deploy-pages@v4
