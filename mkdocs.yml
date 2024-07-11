@@ -1,5 +1,33 @@
 site_name: 한국 연합우주 개발자 모임 문서 저장소
 site_url: https://docs.fedidev.kr/
+repo_url: https://github.com/fedidevkr/docs
+repo_name: fedidevkr/docs
+edit_uri: edit/main/doc/
+
 theme:
   name: material
   language: ko
+  features:
+  - content.action.edit
+  - optimize
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+- social:
+    enabled: !ENV [CI, false]
+    cards_layout_options:
+      font_family: "Noto Sans KR"
+
+extra:
+  social:
+  - icon: fontawesome/brands/github
+    name: GitHub
+    link: https://github.com/fedidevkr/docs
+  - icon: fontawesome/brands/discord
+    name: Discord
+    link: https://discord.gg/B2ABMBpHNA
+
+markdown_extensions:
+- footnotes
+- gfm_admonition
